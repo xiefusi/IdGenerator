@@ -12,7 +12,27 @@ import java.util.List;
 @ConfigurationProperties(prefix = "key-generator")
 public class KeyGeneratorProperties {
 
+    private boolean dbcust = false;
+
+    private DBProperties datasource;
+
     private List<Business> businesses;
+
+    public boolean isDbcust() {
+        return dbcust;
+    }
+
+    public void setDbcust(boolean dbcust) {
+        this.dbcust = dbcust;
+    }
+
+    public DBProperties getDatasource() {
+        return datasource;
+    }
+
+    public void setDatasource(DBProperties datasource) {
+        this.datasource = datasource;
+    }
 
     public List<Business> getBusinesses() {
         return businesses;
@@ -35,7 +55,7 @@ public class KeyGeneratorProperties {
 
         private String businessId;
         private Long begin = 1L;
-        private Integer step = 1000;
+        private Integer step = 5000;
         private String description;
 
         public String getBusinessId() {
@@ -68,6 +88,56 @@ public class KeyGeneratorProperties {
 
         public void setDescription(String description) {
             this.description = description;
+        }
+    }
+
+    public static class DBProperties{
+
+        private String driverClassName = "com.mysql.jdbc";
+        private String url;
+        private String username;
+        private String password;
+
+        public DBProperties() {
+        }
+
+        public DBProperties(String driverClassName, String url, String username, String password) {
+            this.driverClassName = driverClassName;
+            this.url = url;
+            this.username = username;
+            this.password = password;
+        }
+
+        public String getDriverClassName() {
+            return driverClassName;
+        }
+
+        public void setDriverClassName(String driverClassName) {
+            this.driverClassName = driverClassName;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
         }
     }
 }

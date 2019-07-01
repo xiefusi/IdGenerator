@@ -1,10 +1,8 @@
 package io.xiefs.utils.generator.autoconfig;
 
-import io.xiefs.utils.generator.persistence.properties.KeyGeneratorProperties;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.ComponentScan;
+import io.xiefs.utils.generator.persistence.config.PersistenceConfig;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * Description:
@@ -12,8 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * Date 2019/6/6 下午3:13
  */
 @Configuration
-@ComponentScan("io.xiefs.utils.generator.persistence")
-@EnableConfigurationProperties(KeyGeneratorProperties.class)
-//@EnableAutoConfiguration
+@Import(PersistenceConfig.class)
 public class KeyGeneratorAutoConfig {
 }
