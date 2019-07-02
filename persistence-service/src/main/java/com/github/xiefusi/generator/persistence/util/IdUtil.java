@@ -1,7 +1,7 @@
-package io.xiefs.utils.generator.persistence.util;
+package com.github.xiefusi.generator.persistence.util;
 
-import io.xiefs.utils.generator.persistence.model.Result;
-import io.xiefs.utils.generator.persistence.service.KeyGeneratorService;
+import com.github.xiefusi.generator.persistence.model.Result;
+import com.github.xiefusi.generator.persistence.service.KeyGeneratorService;
 
 import java.util.Objects;
 

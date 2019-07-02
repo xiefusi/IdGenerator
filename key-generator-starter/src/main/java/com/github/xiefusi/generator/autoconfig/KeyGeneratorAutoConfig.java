@@ -1,6 +1,6 @@
-package io.xiefs.utils.generator.autoconfig;
+package com.github.xiefusi.generator.autoconfig;
 
-import io.xiefs.utils.generator.persistence.config.PersistenceConfig;
+import com.github.xiefusi.generator.persistence.config.PersistenceConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

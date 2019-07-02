@@ -1,10 +1,10 @@
-package io.xiefs.utils.generator.persistence.service;
+package com.github.xiefusi.generator.persistence.service;
 
-import io.xiefs.utils.generator.persistence.IDGen;
-import io.xiefs.utils.generator.persistence.dao.IDAllocDao;
-import io.xiefs.utils.generator.persistence.model.*;
-import io.xiefs.utils.generator.persistence.properties.KeyGeneratorProperties;
-import io.xiefs.utils.generator.persistence.util.IdUtil;
+import com.github.xiefusi.generator.persistence.IDGen;
+import com.github.xiefusi.generator.persistence.dao.IDAllocDao;
+import com.github.xiefusi.generator.persistence.model.*;
+import com.github.xiefusi.generator.persistence.properties.KeyGeneratorProperties;
+import com.github.xiefusi.generator.persistence.util.IdUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

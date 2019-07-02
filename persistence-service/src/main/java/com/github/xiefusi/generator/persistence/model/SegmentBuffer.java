@@ -1,4 +1,4 @@
-package io.xiefs.utils.generator.persistence.model;
+package com.github.xiefusi.generator.persistence.model;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;

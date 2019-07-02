@@ -1,4 +1,4 @@
-package io.xiefs.utils.generator.persistence.model;
+package com.github.xiefusi.generator.persistence.model;
 
 public class Result {
     private long id;

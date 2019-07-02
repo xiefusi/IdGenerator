@@ -2,7 +2,7 @@ quick start
 该jar包依赖springboot，只能在有数据源的模块中使用
 ```xml
 <dependency>
-    <groupId>io.xiefs.utils</groupId>
+    <groupId>com.github.xiefusi</groupId>
     <artifactId>key-generator-starter</artifactId>
     <version>${id.generator.version}</version>
 </dependency>

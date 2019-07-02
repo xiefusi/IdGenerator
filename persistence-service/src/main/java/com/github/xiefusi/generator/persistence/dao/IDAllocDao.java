@@ -1,7 +1,7 @@
-package io.xiefs.utils.generator.persistence.dao;
+package com.github.xiefusi.generator.persistence.dao;
 
-import io.xiefs.utils.generator.persistence.model.GeneratorModel;
-import io.xiefs.utils.generator.persistence.properties.KeyGeneratorProperties;
+import com.github.xiefusi.generator.persistence.properties.KeyGeneratorProperties;
+import com.github.xiefusi.generator.persistence.model.GeneratorModel;
 
 import java.util.List;
 

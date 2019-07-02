@@ -1,6 +1,6 @@
-package io.xiefs.utils.generator.persistence.config;
+package com.github.xiefusi.generator.persistence.config;
 
-import io.xiefs.utils.generator.persistence.properties.KeyGeneratorProperties;
+import com.github.xiefusi.generator.persistence.properties.KeyGeneratorProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

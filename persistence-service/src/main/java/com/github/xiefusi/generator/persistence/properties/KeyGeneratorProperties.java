@@ -1,4 +1,4 @@
-package io.xiefs.utils.generator.persistence.properties;
+package com.github.xiefusi.generator.persistence.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

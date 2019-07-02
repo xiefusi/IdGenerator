@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>IdGenerator</artifactId>
-        <groupId>io.xiefs.utils</groupId>
-        <version>1.0.0.RELEASE</version>
+        <groupId>com.github.xiefusi</groupId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,7 +13,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.xiefs.utils</groupId>
+            <groupId>com.github.xiefusi</groupId>
             <artifactId>persistence-service</artifactId>
             <version>${project.version}</version>
         </dependency>

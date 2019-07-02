@@ -1,9 +1,9 @@
-package io.xiefs.utils.generator.persistence.dao.impl;
+package com.github.xiefusi.generator.persistence.dao.impl;
 
+import com.github.xiefusi.generator.persistence.dao.IDAllocDao;
+import com.github.xiefusi.generator.persistence.properties.KeyGeneratorProperties;
 import com.zaxxer.hikari.util.DriverDataSource;
-import io.xiefs.utils.generator.persistence.dao.IDAllocDao;
-import io.xiefs.utils.generator.persistence.model.GeneratorModel;
-import io.xiefs.utils.generator.persistence.properties.KeyGeneratorProperties;
+import com.github.xiefusi.generator.persistence.model.GeneratorModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
