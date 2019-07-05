@@ -1,5 +1,8 @@
 quick start
 该jar包依赖springboot，只能在有数据源的模块中使用
+如果使用模块中有spring管理的数据源可以不用配置数据源
+如果没有需要手动添加数据源
+服务器不同实例是通过数据库的主键生成表来确保id生成唯一的
 ```xml
 <dependency>
     <groupId>com.github.xiefusi</groupId>
@@ -11,7 +14,7 @@ quick start
 key-generator:
   dbcust: true #默认为false(使用使用模块中的连接池)
   datasource:
-    driver-class-name: com.mysql.jdbc
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:id-generator}?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: ${MYSQL_USERNAME:root}
     password: ${MYSQL_PASSWORD:root}
